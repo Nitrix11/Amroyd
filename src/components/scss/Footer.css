@@ -1,0 +1,60 @@
+
+footer {
+    overflow: hidden;
+
+   p{
+        padding-top: 25px;
+    }
+    h2 {
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        text-align: center;
+        color: #fff;
+    }
+
+    background-color: black;
+
+    hr {
+        border: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding-top: 30px;
+        margin-bottom: 15px;
+        border: 2px solid rgb(187, 186, 186);
+    }
+
+    .hr {
+        hr {
+            margin-top: 20px;
+
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+    }
+
+    .main {
+        padding-left: 100px;
+
+        .help {
+            width: 20%;
+        }
+
+        .shop {
+            width: 20%;
+
+        }
+
+        .shoptacle {
+            width: 20%;
+        }
+
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

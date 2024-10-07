@@ -1,0 +1,22 @@
+.newsletter-container {
+    background: url('../../assets/banner.jpeg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    /* padding: 50px 20px; */
+    height: 59vh;
+    position: relative;
+    width: 80%; /* Set width to 80% */
+    margin: auto; /* Center the container */
+    margin-bottom: 70px;
+  }
+  .newsletter-content {
+  background: rgba(0, 0, 0, 0.6);
+  height: 59vh;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+} 
+  .three{
+  
+    text-align: center;
+  }
