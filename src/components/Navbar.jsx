@@ -13,16 +13,16 @@ function Navbar() {
       {/* Nav Links */}
       <ul className="flex flex-row text-white text-[16px] gap-[30px]">
         <Link to="/">
-          <li className="hover:text-gray-400">Home</li>
+          <li className="hover:text-gray-400 text-[#000]">Home</li>
         </Link>
         <Link to="/about">
-          <li className="hover:text-gray-400">About Us</li>
+          <li className="hover:text-gray-400 text-[#000]">About Us</li>
         </Link>
         <Link to="/products">
-          <li className="hover:text-gray-400">Products</li>
+          <li className="hover:text-gray-400 text-[#000]">Products</li>
         </Link>
         <Link to="/contact">
-          <li className="hover:text-gray-400">Contact Us</li>
+          <li className="hover:text-gray-400 text-[#000]">Contact Us</li>
         </Link>
       </ul>
     </div>
