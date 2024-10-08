@@ -1,43 +1,30 @@
-import React, { useState } from 'react';
-import logo1 from "../assets/AMROYD LOGO.jpg";
+import React from "react";
 import { Link } from "react-router-dom";
-import AboutPage from "./Pages/Aboutus";
-import ContactPage from "./Pages/Contact";
-import ProductsPage from "./Pages/Products";
-import App from "../App";
-import "../components/scss/Navbar.css";
+import logo1 from "../assets/AMROYD LOGO.jpg";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
-    <div id="nav" className="flex items-center justify-center">
-      <nav className="bg-[ rgba(0, 0, 0, 0.868)] flex items-center justify-center gap-2">
-        <div className="logo1 w-[5%] mr-2">
-          <img src={logo1} alt="" />
-        </div>
-        <button className={`menu-button ${isMenuOpen ? 'active' : ''} ${window.innerWidth <= 425 || window.innerWidth >= 320 ? '' : 'hidden'}`} onClick={toggleMenu}>
-          <span className="menu-icon">&#9776;</span>
-        </button>
-        <ul className={`nav-links ${isMenuOpen ? 'open' : ''} ${window.innerWidth <= 768 ? 'hidden' : ''}`}>
-          <Link to="/">
-            <li>Home</li>
-          </Link>
-          <Link to="/about">
-            <li>About Us</li>
-          </Link>
-          <Link to="/products">
-            <li>Products</li>
-          </Link>
-          <Link to="/contact">
-            <li>Contact Us</li>
-          </Link>
-        </ul>
-      </nav>
+    <div id="nav" className="flex items-center justify-between p-4 bg-[ rgba(0, 0, 0, 1.438)]">
+      {/* Logo Section */}
+      <div className="w-[5%]">
+        <img src={logo1} alt="Logo" className="w-full h-auto" />
+      </div>
+
+      {/* Nav Links */}
+      <ul className="flex flex-row text-white text-[16px] gap-[30px]">
+        <Link to="/">
+          <li className="hover:text-gray-400">Home</li>
+        </Link>
+        <Link to="/about">
+          <li className="hover:text-gray-400 ">About Us</li>
+        </Link>
+        <Link to="/products">
+          <li className="hover:text-gray-400">Products</li>
+        </Link>
+        <Link to="/contact">
+          <li className="hover:text-gray-400">Contact Us</li>
+        </Link>
+      </ul>
     </div>
   );
 }

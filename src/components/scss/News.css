@@ -1,108 +1,101 @@
-/* Base styles */
 .news-container {
-  background: url('../../assets/banner.jpeg') no-repeat center center;
-  background-size: cover;
-  height: 29vh;
-  position: relative;
-  color: white;
-  width: 100%; /* Adjust for desired margins/padding */
-  margin: auto;
-  margin-bottom: 70px;
+    background: url('../../assets/banner.jpeg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover;
+    /* padding: 50px 20px; */
+    height: 29vh;
+    position: relative;
+    color: white;
+    width: 80%; /* Set width to 80% */
+    margin: auto; /* Center the container */
+    margin-bottom: 70px;
+  }
+  
+  .news-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    /* padding:  30px; */
+height: 29vh;
+    /* border-radius: 10px; */
+    max-width: 100%;
+    /* margin: auto; */
+    text-align: center;
+  }
+  
+  h2 {
+    margin: 0 0 10px;
+  }
+  
+  .news-input {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align input and button */
+    margin-top: 20px;
+  }
+  
+  .news-input p {
+    margin-right: 10px; /* Add space between the paragraph and input */
+  }
+  
+  input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: black;
+  }
+  
+  .subscribe-button {
+    background-color: #0f0f0f; /* Red background */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #535353; /* Darker red on hover */
+  }
+  .two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+.three{
+    margin-bottom: 15px;
+    text-align: left;
+    .h2{
+        font-weight: bold;
+
+    }
+   
 }
-
-.news-content {
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-  padding: 20px; /* Adjust padding to fit content */
-  height: auto; /* Allow content to determine height */
-  border-radius: 10px;
-  max-width: 100%;
-}
-
-h2 {
-  margin: 0 0 10px;
-}
-
-.news-input {
-  display: flex;
-  flex-direction: column; /* Stack input and button on mobile */
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.news-input p {
-  margin-bottom: 10px; /* Adjust spacing between text and input */
-}
-
-input[type="email"] {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  color: black;
-  width: 100%; /* Full width on mobile */
-}
-
-.subscribe-button {
-  background-color: #0f0f0f;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  width: 100%; /* Full width on mobile */
-}
-
-.subscribe-button:hover {
-  background-color: #535353;
-}
-
-.two {
-  display: flex;
-  flex-direction: column; /* Stack elements on mobile */
-  align-items: center;
-  justify-content: center;
-  gap: 100px; /* Adjust gap size as needed */
-}
-
-.three {
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.three h2 {
-  font-weight: bold;
-}
-
-.ellipse {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  top: 160px;
-  width: 3%; /* Adjust width as needed */
-}
-
-.circle {
-  position: relative;
-}
-
-/* Media queries for responsiveness */
-
-@media (max-width: 768px) {
-  /* Adjust styles for smaller screens */
+  }
+  .ellipse{
+    position: absolute;
+left: 0;
+bottom: 0;
+top: 160px;
+    width: 3%;
+  }
+  .circle{
+    position: relative;
+  }
+  
+@media (min-width: 320px) and (max-width: 425px) {
   .news-container {
+    /* Adjust styles for 425px screen */
     height: auto; /* Allow container to adjust to content */
+    padding: 10px; /* Reduce padding */
   }
 
-  .two {
-    gap: 20px; /* Reduce gap for tighter spacing on mobile */
+  .news-content {
+    padding: 10px; /* Reduce padding further */
   }
 
   .news-input {
-    /* Consider adjusting input/button layout for mobile */
+    /* Consider adjusting input/button layout for 425px */
   }
 }

@@ -1,72 +1,79 @@
 li:hover{
 text-decoration: underline;
 padding-bottom: 5px;
-}.menu-button {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: black;
 }
-
-.menu-button.active {
-  color: white;
-}
-
-.nav-links {
+#nav {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+  background-color: rgba(0, 0, 0, 0.438);
+  gap: 70px;
 }
 
-.nav-links.open {
-  display: block;
-  text-align: center;
+ul {
+  list-style-type: none;
 }
 
-.nav-links.hidden {
-  display: none;
+ul li {
+  padding: 10px 0;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
-  .menu-button {
-    display: block;
-  }
-}
 
 @media (min-width: 768px) {
-  .nav-links {
-    display: flex;
+  ul {
+    flex-direction: row;
+    display: flex !important;
+    position: static;
+    width: auto;
   }
 
-  .nav-links li {
-    color: white; /* Make list items white */
+  .logo {
+    width: 5%;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
-
-
-.nav-links li {
-  color: white; /* Make list items white */
+@media (max-width:425px) {
+  .logo {
+    width: 5%;
+  } }
+/* 
+#nav {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.438);
+  gap: 70px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 20px;
+ul {
+  list-style-type: none;
 }
 
-.nav-links.open {
-  display: block;
-  text-align: center;
+ul li {
+  padding: 10px 0;
 }
 
-.nav-links.hidden {
-  display: none;
-}
 
 @media (min-width: 768px) {
-  .nav-links {
-    display: flex;
+  ul {
+    flex-direction: row;
+    display: flex !important;
+    position: static;
+    width: auto;
   }
 
-  .nav-links li {
-    color: white; /* Make list items white */
+  .logo {
+    width: 5%;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
+@media (max-width:425px) {
+  .logo {
+    width: 5%;
+  } 
+} */
