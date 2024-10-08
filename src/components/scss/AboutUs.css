@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
   }
+  nav{
+    background-color:  rgba(0, 0, 0, 0.868);
+    margin-bottom: 100px;
+  }
   
   body {
     font-family: Arial, sans-serif;
@@ -51,7 +55,133 @@
     border-bottom: 1px solid #ccc;
   }
   
-  .reasons,
+  .reasons,body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+
+    gap: 70px;
+    align-items: center;
+    text-align: left;
+}
+
+.about-image {
+    width: 30%;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.why-choose-us, .our-values, .our-vision, .our-mission {
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.values-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    flex: 1 1 24%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #007BFF;
+    border-radius: 8px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.value-card:hover {
+    transform: scale(1.05);
+}
+
+.value-icon {
+    font-size: 40px;
+    color: #007BFF;
+}
+
+.mission-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mission-image {
+    width: 50%;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-image, .mission-image {
+        width: 50%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .mission-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+
+    .value-card {
+        flex: 1 1 48%;
+    }
+}
+
+@media (max-width: 425px) {
+    .card {
+        width: 100%;
+    }
+
+    .value-card {
+        flex: 1 1 100%;
+    }
+}
+
   .values {
     display: flex;
     flex-wrap: wrap;
@@ -78,6 +208,9 @@
   /* Responsive Design */
   
   @media (max-width: 768px) {
+    .about-content {
+      flex-wrap: wrap;
+    }
     .reason,
     .value {
       flex-basis: 45%;
@@ -85,6 +218,9 @@
   }
   
   @media (max-width: 480px) {
+    .about-content {
+      flex-wrap: wrap;
+    }
     .container {
       margin: 20px auto;
       padding: 10px;

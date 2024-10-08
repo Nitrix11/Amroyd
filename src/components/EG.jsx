@@ -38,9 +38,10 @@ import serv9 from"../assets/serv9.jpeg"
 import serv10 from"../assets/serv10.jpeg"
 const categories = {
     "Work Wear": [
-        { image: "https://yourimageurl.com/workwear1.jpg", title: "Workwear 1", price: "$50" },
-        { image: "https://yourimageurl.com/workwear2.jpg", title: "Workwear 2", price: "$60" },
-        { image: "https://yourimageurl.com/workwear3.jpg", title: "Workwear 3", price: "$70" },
+      { image: cop4, title: 'work Wear', price: '$30' },
+      { image: cop5, title: 'work Wear', price: '$40' },
+      { image: cop6, title: 'work Wear', price: '$60' },
+      { image: cop4, title: 'work Wear', price: '$30' },
     ],
     "Corporate Wear": [
         { image: cop1, title: 'Corporate Wear', price: '$30' },
@@ -183,7 +184,7 @@ const Tabs = ({ categories, selectedTab, setSelectedTab }) => {
         />
         <div className="tab-content">
           <ProductCarousel products={categories[selectedTab]} />
-          <h2>3D Rotating Carousel in {selectedTab}</h2>
+          <h2>3D view in {selectedTab}</h2>
           <ThreeDCarousel products={categories[selectedTab]} />
         </div>
       </div>

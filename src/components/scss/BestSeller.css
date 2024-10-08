@@ -56,3 +56,16 @@
     border-radius: 5px;
     font-size: 14px;
   }
+
+@media (min-width: 425px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: calc(33.33% - 20px);
+  }
+}
+

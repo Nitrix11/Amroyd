@@ -7,25 +7,32 @@ import Hero from "./components/Hero";
 import Join from "./components/Join";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
+import AboutPage from "./components/Pages/Aboutus";
+import ContactPage from "./components/Pages/Contact";
+import Home from "./components/Pages/Home";
+import ProductsPage from "./components/Pages/Products";
 import Scroll from "./components/Scroll";
 import CarouselSection2 from "./components/Tabs";
 import Carousel from "./components/logos";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
 function App() { 
   return (
 <>
-<Navbar/>
-<Hero/>
-<BestSellers/>
-<Join/>
 
-<TopCategories/>
-<Scroll/>
-<CarouselSection2/>
-<News/>
-<Carousel/>
-<Footer/>
+<Router>
+<Navbar/>
+<Routes>
+
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/Products" element={<ProductsPage />} />
+      </Routes>
+      <Footer/>
+
+    </Router>
 {/* <TabSection/> */}
 </>
   );

@@ -8,7 +8,7 @@ function Hero(){
                 <h1 className="text-[40px] ">
                    The right kit for the job
                 </h1>
-                <h1 className="text-[35px] ">Lorm ipum dolo met.</h1>
+                <h1 className="text-[35px] ">Premium fashion, budget-friendly.</h1>
                 <p>
                    <TypingText/>
                 </p>
