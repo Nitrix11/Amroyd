@@ -16,7 +16,7 @@ function Navbar() {
           <li className="hover:text-gray-400">Home</li>
         </Link>
         <Link to="/about">
-          <li className="hover:text-gray-400 ">About Us</li>
+          <li className="hover:text-gray-400">About Us</li>
         </Link>
         <Link to="/products">
           <li className="hover:text-gray-400">Products</li>
