@@ -161,6 +161,7 @@
     .mission-content {
         flex-direction: column;
         text-align: center;
+    
     }
 
     .card {
@@ -230,5 +231,12 @@
     .value {
       flex-basis: 100%;
     }
+    .mission-content {
+      flex-direction: column;
+      text-align: center;
+      p{
+        width: 70%;
+      }
+  }
   }
   
