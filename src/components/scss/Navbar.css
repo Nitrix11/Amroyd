@@ -39,7 +39,10 @@ ul li {
 @media (max-width:425px) {
   .logo {
     width: 5%;
-  } }
+  }
+li{
+  font-size: 10px;
+} }
 /* 
 #nav {
   position: relative;

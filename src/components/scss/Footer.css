@@ -72,6 +72,13 @@ footer {
   @media (max-width: 425px) {
 footer{
   flex-direction: column;
+  .help{
+    width: 100%;
+    p{
+      width: 80%;
+      font-size: 8px;
+    }
+  }
 }
   }
   
