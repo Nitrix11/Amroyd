@@ -32,9 +32,10 @@ function Footer(){
             <hr/>
         </div>
 
-        <h3>@ AMROYD  2024</h3>
+   
 
     </footer>
+    <h3>@ AMROYD  2024</h3>
         </>
     )
 }
