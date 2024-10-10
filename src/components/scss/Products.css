@@ -5,6 +5,7 @@ body {
 }
 
 .products-container {
+    overflow: hidden;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
@@ -73,7 +74,7 @@ h2 {
 /* Carousel View */
 .carousel5 {
     display: flex;
-    overflow-x: auto;
+    overflow:hidden;
     gap: 15px;
     animation: fadeIn 0.5s ease-in-out;
     scroll-snap-type: x mandatory;
