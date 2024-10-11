@@ -32,3 +32,35 @@
         }
     }}
 }
+
+@media (max-width:375px) {
+    #hero{
+
+    height: 30vh;
+    #text{
+        height: 34vh;
+        h1{
+            font-size: 20px;
+        }
+        p{
+            text-align: center;
+            font-size: 15px;
+        }
+    }}
+}
+
+@media (max-width:320px) {
+    #hero{
+
+    height: 50vh;
+    #text{
+        height: 34vh;
+        h1{
+            font-size: 20px;
+        }
+        p{
+            text-align: center;
+            font-size: 15px;
+        }
+    }}
+}

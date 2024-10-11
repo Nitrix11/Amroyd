@@ -82,3 +82,32 @@
     max-width: 60px; /* Adjust logo size */
   }
 }
+@media (max-width: 375px) {
+  .carousel-container {
+    width: 100%;
+    display: none; /* Make carousel full width on smaller screens */
+  }
+
+  .carousel-logos {
+    gap: 5px; /* Reduce gap even further */
+  }
+
+  .logo img {
+    max-width: 60px; /* Adjust logo size */
+  }
+}
+
+@media (max-width: 320px) {
+  .carousel-container {
+    width: 100%;
+    display: none; /* Make carousel full width on smaller screens */
+  }
+
+  .carousel-logos {
+    gap: 5px; /* Reduce gap even further */
+  }
+
+  .logo img {
+    max-width: 60px; /* Adjust logo size */
+  }
+}

@@ -240,3 +240,26 @@
   }
   }
   
+  
+  @media (max-width: 320px) {
+    .about-content {
+      flex-wrap: wrap;
+    }
+    .container {
+      margin: 20px auto;
+      padding: 10px;
+    }
+    
+    .reason,
+    .value {
+      flex-basis: 100%;
+    }
+    .mission-content {
+      flex-direction: column;
+      text-align: center;
+      p{
+        width: 70%;
+      }
+  }
+  }
+  
