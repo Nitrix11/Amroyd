@@ -31,11 +31,11 @@ function Footer(){
         <div class="hr">
             <hr/>
         </div>
-f
+
    
 
     </footer>
-    <h3 className="bg-[black] text-[#fff] text-center;">@ AMROYD  2024</h3>
+    <h3 className="bg-[black] text-[#fff] text-center">@ AMROYD  2024</h3>
         </>
     )
 }
