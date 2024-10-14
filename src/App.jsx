@@ -1,36 +1,54 @@
-import BestSellers from "./components/BestSeller";
-import TopCategories from "./components/Category";
-// import TabSection from "./components/EG.jsx";
-// import Apps from "./components/EG.jsx";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Join from "./components/Join";
-import Navbar from "./components/Navbar";
-import News from "./components/News";
-import AboutPage from "./components/Pages/Aboutus";
-import ContactPage from "./components/Pages/Contact";
-import Home from "./components/Pages/Home";
-import ProductsPage from "./components/Pages/Products";
-import Scroll from "./components/Scroll";
-import CarouselSection2 from "./components/Tabs";
-import Carousel from "./components/logos";
+
+
+import Nav from "./components/Nav";
+import Hero from "./components/hero";
+import Boost from "./components/boost";
+import Goals from "./components/goal";
+import DigitalSolutionsSection from "./components/Solution";
+import PricingSection from "./components/prices";
+import FooterSection from "./components/Footer";
+import ServicesSection from "./components/services";
+import ContactSection from "./components/Contact";
+import AboutSection from "./components/about";
+import AboutSection2 from "./components/about2";
+import AboutSection3 from "./components/about3";
+import AboutSection4 from "./components/about4";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { SiHomepage } from "react-icons/si";
+
+import AboutPage from "./components/Pages/AboutPage";
+import ContactPage from "./components/Pages/ContactPage";
+import Home from "./components/Pages/Home";
+import ServicesPage from "./components/Pages/ServicesPage";
 
 
 function App() { 
   return (
 <>
+{/* <Nav/>
+<Hero/>
+<Boost/>
+<Goals/>
+<DigitalSolutionsSection/>
+<PricingSection/>
+<FooterSection/>
+<ServicesSection/>
+<ContactSection/>
+<AboutSection/>
+<AboutSection2/>
+<AboutSection3/>
+<AboutSection4/> */}
 
 <Router>
-<Navbar/>
+<Nav/>
 <Routes>
 
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/Products" element={<ProductsPage />} />
+        <Route path="/services" element={<ServicesPage />} />
       </Routes>
-      <Footer/>
+      <FooterSection/>
 
     </Router>
 {/* <TabSection/> */}

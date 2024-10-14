@@ -1,30 +1,18 @@
-import BestSellers from "../BestSeller";
-import TopCategories from "../Category";
-import Hero from "../Hero";
-import Join from "../Join";
-import News from "../News";
-import Carousel from "../Scroll";
-import CarouselSection from "../Tabs";
-import'../scss/Home.css'
-
+import DigitalSolutionsSection from "../Solution";
+import Boost from "../boost";
+import Goals from "../goal";
+import Hero from "../hero";
+import PricingSection from "../prices";
 
 function Home(){
     return(
         <>
-        
-<Hero/>
-<BestSellers/>
-<Join/>
-
-<TopCategories/>
-<CarouselSection/>
-
-<Carousel/>
-
-
-<News/>
-<logos/>
+        <Hero/>
+        <Boost/>
+<Goals/>
+<DigitalSolutionsSection/>
+<PricingSection/>
         </>
     )
 }
-export default Home;
+export default Home
